@@ -1,6 +1,6 @@
+# coding=utf-8
 """シンプルなパイプライン."""
 
-# coding=utf-8
 import apache_beam as beam
 from apache_beam.options.pipeline_options import PipelineOptions, StandardOptions, GoogleCloudOptions
 
