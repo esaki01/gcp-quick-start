@@ -3,6 +3,9 @@
 
 import apache_beam as beam
 from apache_beam.options.pipeline_options import PipelineOptions, StandardOptions, GoogleCloudOptions
+from apache_beam.options.value_provider import StaticValueProvider
+
+StaticValueProvider(str, 10)
 
 
 class MyOptions(PipelineOptions):
@@ -49,7 +52,7 @@ if __name__ == '__main__':
 
     (p
      | 'ReadFromText' >> beam.io.ReadFromText(options.input)  # オプションで指定したパスのファイルを読み取る
-     | 'ReplaceSuffix' >> beam.ParDo(MyReplaceFn(options.suffix))  # 接尾辞を「.」から指定したものに入れ替える
+     | 'ReplaceSuffix' >> beam.ParDo(MyReplaceFn(options.suffix))  # 接尾辞の「.」を指定した値に入れ替える
      | 'WriteToText' >> beam.io.WriteToText(options.output))  # オプションで指定したパスにファイルを書き込む
 
     p.run()
