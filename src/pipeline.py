@@ -23,7 +23,7 @@ class MyOptions(PipelineOptions):
         parser.add_value_provider_argument(
             '--suffix',
             default='!',
-            help='Output gcs file path.')
+            help='Suffix to replace.')
 
 
 class MyReplaceFn(beam.DoFn):
