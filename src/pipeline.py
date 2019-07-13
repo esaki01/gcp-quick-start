@@ -23,7 +23,7 @@ class MyOptions(PipelineOptions):
         parser.add_value_provider_argument(
             '--suffix',
             default='!',
-            help='Suffix to replace.')
+            help='Suffix change.')
 
 
 class MyReplaceFn(beam.DoFn):
