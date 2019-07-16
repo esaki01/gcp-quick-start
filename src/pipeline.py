@@ -45,7 +45,7 @@ if __name__ == '__main__':
     google_cloud_options.job_name = 'myjob'  # 任意のジョブ名
     google_cloud_options.staging_location = 'gs://dataflow-reference/binaries'  # 作成したバケット以下の任意のロケーション
     google_cloud_options.temp_location = 'gs://dataflow-reference/tmp'  # 作成したバケット以下の任意のロケーション
-    google_cloud_options.template_location = 'gs://dataflow-reference/template'  # テンプレートのファイルを保存する場所を指定する
+    google_cloud_options.template_location = 'gs://dataflow-reference/templates/template1'  # テンプレートのファイルを保存する場所を指定する
     options.view_as(StandardOptions).runner = 'DataflowRunner'  # ランナーには「DataflowRunner」を指定
 
     p = beam.Pipeline(options=options)
