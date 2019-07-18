@@ -14,3 +14,4 @@ task.update({
 })
 
 client.put(task)
+# client.put_multi([task1, task2])
