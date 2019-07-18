@@ -15,5 +15,3 @@ This is for Cloud Dataflow.
 $ pip install apache-beam[gcp]
 $ pip install --upgrade apache-beam[gcp]
 ```
-
-
