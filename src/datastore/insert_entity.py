@@ -5,8 +5,8 @@ kind = 'Task'
 
 with client.transaction():
 
-    key = client.key(kind, 1)
-    task = datastore.Entity(key)
+    key = client.key(kind)
+    task = datastore.Entity(key, exclude_from_indexes=['description'])
     task.update({
         'category': 'Personal',
         'done': False,
