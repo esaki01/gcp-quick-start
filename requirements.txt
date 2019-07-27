@@ -1,3 +1,4 @@
 apache-beam[gcp]
+apache-airflow
 google-api-python-client
 google-cloud-datastore
