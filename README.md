@@ -1,4 +1,4 @@
-# Google Cloud Platform Reference
+# Google Cloud Platform Quick Start
 
 ## Google Cloud SDK
 Install: https://cloud.google.com/sdk/docs/?hl=ja
@@ -9,7 +9,7 @@ $ gcloud init
 ```
 
 ## Apache Beam SDK
-This is for Cloud Dataflow.
+For using Cloud Dataflow.
 
 ```
 $ pip install apache-beam[gcp]
