@@ -2,3 +2,7 @@ apache-beam[gcp]
 apache-airflow
 google-api-python-client
 google-cloud-datastore
+numpy>=1.14
+pandas==0.24
+six>=1.11
+tensorflow>=1.13,<2
